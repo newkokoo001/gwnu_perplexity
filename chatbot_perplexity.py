@@ -127,7 +127,7 @@ with st.sidebar:
     if st.button("대화 초기화"):
         st.session_state.messages = []
         st.session_state.messages.append({"role": "user", "content": "안녕하세요! 국립강릉원주대학교에 관한 질문이 있으신가요?"})
-        st.experimental_rerun()
+        st.rerun()
     debug_mode = st.checkbox("디버그 모드")
     if debug_mode and "debug_info" in st.session_state:
         st.text_area("API 요청 데이터", st.session_state.debug_info, height=300)
