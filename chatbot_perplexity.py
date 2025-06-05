@@ -15,12 +15,12 @@ if not api_key:
     st.stop()
 
 st.set_page_config(
-    page_title="학교 정보 챗봇",
+    page_title="국립강릉원주대학교 챗봇",
     page_icon="🏫",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
-st.title("학교 정보 챗봇")
+st.title("🏫 국립강릉원주대학교 챗봇")
 st.markdown("*학교 관련 질문에 답변해 드립니다. 무엇이든 물어보세요!*")
 
 # 세션 메시지는 비워두고
@@ -28,7 +28,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 # 화면에만 안내 메시지 표시
-st.markdown("안녕하세요! 국립강릉원주대학교에 관한 질문이 있으신가요?")
+st.markdown("📘 안녕하세요! 🏫 국립강릉원주대학교에 관한 질문이 있으신가요?")
 
 def fix_message_roles(messages):
     fixed = []
